@@ -1,0 +1,107 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* Body */
+
+body{
+background:#f5f5f5;
+}
+
+/* Welcome Section */
+
+.welcome{
+height:100vh;
+background:url("images/shop.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+/* Black Overlay */
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:15px;
+width:90%;
+max-width:700px;
+color:white;
+}
+
+/* Heading */
+
+.overlay h1{
+font-size:40px;
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.overlay h2{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.overlay h3{
+font-size:28px;
+color:#00FF7F;
+}
+
+.overlay p{
+font-size:18px;
+margin-bottom:15px;
+}
+
+/* Button */
+
+#enterBtn{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:8px;
+background:#28a745;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+#enterBtn:hover{
+background:#218838;
+transform:scale(1.05);
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.overlay h1{
+font-size:30px;
+}
+
+.overlay h2{
+font-size:20px;
+}
+
+.overlay h3{
+font-size:22px;
+}
+
+.overlay p{
+font-size:16px;
+}
+
+#enterBtn{
+font-size:18px;
+padding:12px 25px;
+}
+
+}
